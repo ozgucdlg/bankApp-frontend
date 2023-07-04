@@ -1,1 +1,9 @@
-<p>category works!</p>
+<ul class="list-group">
+    <li class="list-group-item" 
+    *ngFor="let category of categories" 
+    (click)="setCurrentCategory(category)"
+    >{{category.categoryName}}</li>
+    
+  </ul>
+
+  <h5 style="color:blue; margin-top: 10px;">{{currentCategory}} <span style="color: black;">selected</span></h5>
