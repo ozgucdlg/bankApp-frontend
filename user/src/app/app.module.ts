@@ -8,6 +8,9 @@ import { CategoryComponent } from './components/category/category.component';
 import { UserComponent } from './components/user/user.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RandomComponent } from './components/random/random.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AddressComponent } from './components/address/address.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { RandomComponent } from './components/random/random.component';
     CategoryComponent,
     UserComponent,
     DashboardComponent,
-    RandomComponent
+    RandomComponent,
+    AddressComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
