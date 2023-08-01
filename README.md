@@ -7,6 +7,7 @@ Created an application that makes API request from __JSON placeholder__ and get 
  - Git/Github,
  - Angular 16,
  - Typescript,
+ - HTML,CSS,
  - Bootstrap,
  - Semantic UI,
  - NPM,
