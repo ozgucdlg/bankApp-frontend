@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <a class="navbar-brand" routerLink="/">
+      <i class="fas fa-university"></i>
+      <span>Bank App</span>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/account" routerLinkActive="active-link">
+          <i class="fas fa-user-circle"></i>
+          <span>Account</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/transactions" routerLinkActive="active-link">
+          <i class="fas fa-exchange-alt"></i>
+          <span>Transactions</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/notifications" routerLinkActive="active-link">
+          <i class="fas fa-bell"></i>
+          <span>Notifications</span>
+          <span class="notification-badge" *ngIf="notificationCount > 0">{{notificationCount}}</span>
+        </a>
+      </li>
+
+      <li class="nav-item" *ngIf="!isLoggedIn">
+        <a class="nav-link" routerLink="/auth/login">Login</a>
+      </li>
+      
+      <li class="nav-item" *ngIf="isLoggedIn">
+        <a class="nav-link" href="#" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
